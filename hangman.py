@@ -1,9 +1,7 @@
-import random
-words = (
-    'rabbit', 'tortise', 'bird', 'cat', 'dog'
-)
+from random_words import RandomWords
+rw = RandomWords()
 while True:
-    cur = words[random.randrange(len(words))]
+    cur = rw.random_word()
     solve = ''
     for i in range (len(cur)):
         solve += '*'
